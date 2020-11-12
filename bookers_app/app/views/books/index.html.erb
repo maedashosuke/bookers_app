@@ -28,6 +28,9 @@
   <li><%= message %></li>
   <% end %>
   </ul>
+  <% end %>
+<% if flash.now[:alert] %>
+    <%= flash.now[:alert] %>
 <% end %>
 <%= form_with model: @book, local:true do |f| %>
   <div class="field">
