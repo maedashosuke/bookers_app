@@ -1,4 +1,7 @@
 <h1>Editing Book</h1>
+<% if flash.now[:alert] %>
+    <%= flash.now[:alert] %>
+<% end %>
 <%= form_with model:@book, local:true do |f| %>
   <div class="field">
     <label for="list-title">Title</label>
